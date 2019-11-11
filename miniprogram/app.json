@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/me/me",
+    "pages/today/today",
+    "pages/memo/memo",
+    "pages/memo/info/info",
+    "pages/me/about/about",
+    "pages/me/help/help",
+    "pages/me/help/question/question",
+    "pages/schedule/schedule",
+    "pages/schedule/calendar/calendar",
+    "pages/schedule/kind/kind"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "aMemo",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "color": "#48484b",
+    "selectedColor": "#4E83F5",
+    "backgroundColor": "#efeff4",
+    "list": [
+      {
+        "iconPath": "images/today.png",
+        "selectedIconPath": "images/today-selected.png",
+        "pagePath": "pages/today/today",
+        "text": "Today"
+      },
+      {
+        "iconPath": "images/memo.png",
+        "selectedIconPath": "images/memo-selected.png",
+        "pagePath": "pages/memo/memo",
+        "text": "备忘录"
+      },
+      {
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-selected.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  }
+}

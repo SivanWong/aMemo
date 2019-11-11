@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "simple-calendar": "../../components/simple_calendar/simple_calendar"
+  },
+  "navigationBarTitleText": "备忘录"
+}

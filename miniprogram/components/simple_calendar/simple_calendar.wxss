@@ -1,0 +1,50 @@
+/* components/simple_calendar/simple_calendar.wxss */
+
+.simple_calendar {
+  width: 100%;
+}
+
+.simple_calendar-title {
+  font-size: 48rpx;
+}
+
+.simple_calendar-content {
+  width: 100%;
+  padding: 15rpx 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.simple_calendar-date {
+  padding: 10rpx 0;
+  margin: 15rpx;
+  font-size: 32rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.simple_calendar-selected {
+  border: none;
+  background: #4E83F5;
+  color: #fff;
+  box-shadow: 5px 5px 10px #8a8a8a;
+}
+
+.simple_calendar-week {
+  font-size: 24rpx;
+  margin-bottom: 12rpx;
+}
+
+.simple_calendar-week,
+.simple_calendar-day {
+  width: 120rpx;
+  display: flex;
+  justify-content: center;
+}

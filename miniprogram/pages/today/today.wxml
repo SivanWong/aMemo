@@ -1,0 +1,75 @@
+<!--pages/today/today.wxml-->
+<view class="container">
+
+  <!-- 今日日期 -->
+  <view class="header">
+    <view class="header-date">
+      <text class="header-date-label">Today</text>
+      <text class="header-date-value">{{date}}</text>
+      <text class="header-date-value">{{week}}</text>
+    </view>
+    <image class="header-img" src="./images/today.jpg"></image>
+  </view>
+
+  <!-- 暂无数据 -->
+  <view class="null" wx:if = "{{noData}}">
+    <image 
+    class="null-img"
+    src="./images/null.png"></image>
+    <text class="null-text">暂无数据</text>
+  </view>
+
+  <!-- 今日计划 -->
+  <view class="today" wx:else>
+    <view class="today-images">
+      <view class="today-img" wx:for="{{images}}" wx:key="">
+        <image src="{{item}}"></image>    
+      </view>
+    </view>
+    <view class="today-content">
+      <view class="timer-shaft">
+        <view 
+          class="time {{item.time === currentTime ? ['time-selected'] : ''}}" 
+          wx:for="{{shaft}}" 
+          wx:key="_id"
+          data-id="{{item.id}}"
+          bindtap="switch">
+          <icon 
+            style="display:{{item.sign === 'none' ? 'none' : 'inline-block'}}"
+            class="time-sign" 
+            type="{{item.sign}}" 
+            size="15"/>
+          <text class="time-text">{{item.time}}</text>
+        </view>
+      </view>
+      <view class="today-schedule">
+        <view class="schedule-card" bindtap="sign">
+          <view class="card-content">
+            <text class="content-title">{{schedule.title}}</text>
+            <text class="content-details">{{schedule.details}}</text>
+          </view>
+          <view class="card-img">
+            <image src="{{schedule.img}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 添加数据按钮 -->
+  <movable-area class="area">
+    <movable-view 
+      class="view" 
+      animation 
+      direction='vertical' 
+      inertia='true' 
+      out-of-bounds
+      y='500'>
+      <image
+        bindtap="add"
+        class="addBtn"
+        src="./images/add.png"></image>
+    </movable-view>
+  </movable-area>
+
+</view>

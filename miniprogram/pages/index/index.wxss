@@ -1,0 +1,14 @@
+/* pages/index/index.wxss */
+
+.title {
+  font-size: 48rpx;
+  margin-top: 188rpx;
+  padding: 0 35rpx;
+}
+
+.btn {
+  background: #4E83F5;
+  color: #fff;
+  border-radius: 25rpx;
+  margin-top: 188rpx;
+}

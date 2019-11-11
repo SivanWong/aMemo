@@ -1,0 +1,56 @@
+<!--pages/me/me.wxml-->
+<view class="container">
+
+  <!-- 用户 userinfo -->
+  <view class="userinfo">
+    <button 
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+    ></button>
+    <view>
+      <text class="userinfo-nickname">{{nickName}}</text>
+    </view>
+  </view>
+
+  <view class="special-feature">
+    <!-- 我的分类 -->
+    <view class="box">
+      <view class="kind" bindtap="disabled">
+        <image class="icon" src="./images/kind.png"></image>
+        <text class="kind-text">我的分类</text>
+      </view>
+    </view>
+
+    <!-- 主题设置 -->
+    <view class="box">
+      <view class="theme" bindtap="disabled">
+        <image class="icon" src="./images/theme.png"></image>
+        <text class="theme-text">主题设置</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="common-feature">
+    <!-- 帮助 -->
+    <navigator url="./help/help" class="help">
+      <view class="left">
+        <image class="icon" src="./images/help.png"></image> 
+        <text class="help-text">帮助</text>
+      </view>
+      <image class="right" src="./images/right.png"></image>
+    </navigator>
+
+    <!-- 关于 -->
+    <navigator url="./about/about" class="about">
+      <view class="left">
+        <image class="icon" src="./images/about.png"></image>
+        <text class="about-text">关于</text>
+      </view>
+      <image class="right" src="./images/right.png"></image>
+    </navigator>
+   </view>
+
+
+</view>

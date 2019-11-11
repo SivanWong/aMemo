@@ -1,0 +1,14 @@
+<!--pages/me/help/question/quesetion.wxml-->
+<view class="container">
+
+  <!-- 问题 -->
+  <view class="question">
+    <text class="question-text">备忘录什么时候清一次记录？</text>
+  </view>
+
+  <!-- 答案 -->
+  <view class="answer">
+    <text class="answer-text">每天清除七天前的记录</text>
+  </view> 
+
+</view>

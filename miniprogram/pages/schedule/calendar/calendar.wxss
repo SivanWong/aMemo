@@ -1,0 +1,126 @@
+/* pages/schedule/calendar/calendar.wxss */
+
+.header {
+  width: 100%;
+}
+
+.header image {
+  width: 100%;
+}
+
+.multi-calendar {
+  width: 80%;
+  position: fixed;
+  top: 200rpx;
+  background: #fff;
+  border-radius: 25rpx;
+  box-shadow: 0px 0px 15px #e6e6e6;
+  padding: 35rpx 25rpx;
+}
+
+.multi_calendar-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.multi_calendar-calendar {
+  width: 100%;
+}
+
+.calendar-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(38, 102, 252);
+}
+
+.header-left,
+.header-right {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.calendar-week {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55rpx;
+}
+
+.week-text {
+  width: 14.285%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-date {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25rpx;
+}
+
+.date-text {
+  width: 14.285%;
+  line-height: 80rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-selected {
+  background: rgb(38, 102, 252);
+  color: #fff;
+}
+
+.multi_calendar-time {
+  width: 100%;
+}
+
+.calendar-time {
+  margin-top: 35rpx;
+  width: 100%;
+  padding: 15rpx 0;
+  display: flex;
+}
+
+.calendar-time image{
+  height: 64rpx;
+  width: 64rpx;
+}
+
+.time-picker {
+  width: 80%;
+  line-height: 64rpx;
+  color: #4E83F5;
+  border-radius: 20rpx;
+  padding: 0 35rpx;
+  font-size: 40rpx;
+}
+
+.picker-value {
+  float: right;
+}
+
+.confitmBtn {
+  position: fixed;
+  left: 50%;
+  bottom: 55rpx;
+  width: 60%;
+  background-color: #4E83F5;
+  color: #fff;
+  border-radius: 50rpx; 
+  box-shadow:3px 6px 18px #4E83F5;
+  -moz-transform: translate(-50%,0%);
+  -webkit-transform: translate(-50%,0%);
+  transform: translate(-50%,0%);
+}
+

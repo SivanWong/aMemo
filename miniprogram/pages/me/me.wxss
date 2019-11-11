@@ -1,0 +1,121 @@
+/* pages/me/me.wxss */
+
+page {
+  position: relative;
+}
+
+.userinfo {
+  height: 120rpx;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 50px;
+  background-color: #F6F6F6;
+}
+
+.userinfo-avatar {
+  width: 64px;
+  height: 64px;
+  margin: 50rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.userinfo-avatar:after {
+  border: none;
+}
+
+.userinfo-nickname {
+  color: black;
+  background-color: white;
+  background-size: cover;
+  margin: 50rpx;
+  position: absolute;
+  top: 80rpx;
+  left: 170rpx;
+}
+
+.special-feature {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.box {
+  height: 300rpx;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kind, .theme {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 35rpx 0;
+  border-radius: 25rpx;
+  box-shadow: 0px 0px 15px #bfbfbf;
+}
+
+.common-feature {
+  border-radius: 25rpx 25rpx 0 0;
+  width: 80%;
+  height: 45%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+  box-shadow: 0px 0px 15px #bfbfbf;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 25rpx 15rpx;
+}
+
+.help, .about {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15rpx 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  margin: 0 15px 0;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 20rpx;
+}
+
+.kind-text, 
+.theme-text {
+  width: 100%;
+  line-height: 32px;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: center;
+}
+
+

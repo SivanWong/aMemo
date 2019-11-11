@@ -1,0 +1,53 @@
+/* pages/me/help/help.wxss */
+
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-text {
+  margin-left: 45rpx;
+  line-height: 48px;
+  color: rgb(130, 133, 139);
+}
+
+.content {
+  width: 100%;
+  background-color: #fff;
+}
+
+.question {
+  height: auto;
+  width: 100%;
+  border-top: 1px solid rgb(211, 225, 253);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question:last-child {
+  border-bottom: 1px solid rgb(211, 225, 253);
+}
+
+.question-text {
+  margin: 0 15px 0;
+  line-height: 48px;
+  font-size: 36rpx;
+}
+
+.question-icon {
+  margin: 0 15px 0;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.feedback {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

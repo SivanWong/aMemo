@@ -1,0 +1,28 @@
+<!--pages/memo/info/info.wxml-->
+<view class="info">
+  <view class="header">
+    <image class="header-img" src="{{img}}"></image>
+  </view>
+  <view class="content">
+     <view class="top">
+      <text class="top-title">{{title}}</text>
+      <text class="top-details">{{details}}</text>
+    </view>
+    <view class="bottom">
+      <view class="bottom-left">
+        <view class="bottom-complete">
+          <text class="complete-text">完成时间</text>
+          <text class="complete-time">{{time}}</text>
+          <text class="complete-date">{{date}}</text>
+        </view>
+      </view>
+      <view class="bottom-right">
+        <view class="bottom-remind">
+          <text class="remind-text">提醒时间</text>
+          <text class="remind-time">{{remind}}</text>
+          <text class="remind-kind">{{kindname}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

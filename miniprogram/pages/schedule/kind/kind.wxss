@@ -1,0 +1,59 @@
+/* pages/schedule/kind/kind.wxss */
+
+page {
+  background: #f1f1f1;
+}
+
+.kind-options {
+  height: 60%;
+  width: 80%;
+  position: fixed;
+  top: 180rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kind-wrap {
+  width: 33.33%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kind-option {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8a8a8a;
+  padding: 25rpx 0;
+  border-radius: 25rpx;
+}
+
+.kind-selected {
+  border: none;
+  box-shadow:10px 10px 15px #8a8a8a;
+}
+
+.kind-img {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.kind-name {
+  margin: 25rpx 0;
+}
+
+.kindBtn {
+  position: fixed;
+  left: 50%;
+  bottom: 100rpx;
+  width: 60%;
+  background-color: #4E83F5;
+  color: #fff;
+  border-radius: 50rpx;
+  box-shadow:3px 6px 18px #4E83F5;
+  transform: translate(-50%,0%);
+}

@@ -1,0 +1,10 @@
+<!--pages/index/index.wxml-->
+
+<view class="container">
+  <text class="title">{{title}}</text>
+  <button 
+    class="btn"
+    open-type="getUserInfo" 
+    bindgetuserinfo="onGetUserInfo">{{btnText}}</button>
+</view>
+

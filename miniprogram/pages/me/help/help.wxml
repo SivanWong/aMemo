@@ -1,0 +1,20 @@
+<!--pages/me/help/help.wxml-->
+<view class="container">
+
+  <view class="header">
+   <text class="header-text">热门问题</text>
+  </view>
+
+  <view class="content">
+    <view class="question" bindtap="check" hover-class="active">
+      <text class="question-text">备忘录什么时候清一次记录？</text>
+      <image class="question-icon" src="./images/right.png"></image>
+    </view>
+    <view class="question">
+      <text class="question-text">欢迎大家进行意见反馈</text>
+    </view>
+  </view>
+  
+  <button class="feedback" open-type="feedback" type="primary">意见反馈</button>
+
+</view>

@@ -1,0 +1,39 @@
+<!--pages/me/about/about.wxml-->
+<view class="container">
+
+  <!-- logo -->
+  <view>
+    <image class="logo" src="./images/logo.png"></image>
+  </view>
+
+  <!-- 名称 -->
+  <view class="title">
+    <text>aMemo</text>
+  </view>
+
+  <view class="about">
+    <!-- 版本 -->
+    <view class="info">
+      <text>版本</text>
+      <text>1.0.0</text>
+    </view>
+
+    <!-- 手机 -->
+    <view class="info">
+      <text>手机</text>
+      <text>18302019190</text>
+    </view>
+
+    <!-- 微信 -->
+    <view class="info">
+      <text>微信</text>
+      <text>18302019190</text>
+    </view>
+
+    <!-- 邮箱 -->
+    <view class="info">
+      <text>邮箱</text>
+      <text>1014270057@qq.com</text>
+    </view>
+  </view>
+</view>

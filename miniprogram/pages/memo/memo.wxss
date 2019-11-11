@@ -1,0 +1,150 @@
+/* pages/memo/memo.wxss */
+
+.header {
+  width: 100%;
+}
+
+.header-img {
+  width: 100%;
+  height: 280rpx;
+}
+
+.calendar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15rpx;
+}
+
+.simple-calendar {
+  width: 90%;
+  margin-left: 25rpx;
+}
+
+.null {
+  height: 700rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100rpx;
+}
+
+.null-img {
+  width: 135px;
+  height: 88px;
+}
+
+.null-text {
+  padding-top: 55rpx;
+  color: #4E83F5;
+  font-size: 48rpx;
+}
+
+.schedule {
+  height: 450rpx;
+  width: 100%;
+  overflow: auto;
+}
+
+.card {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-content {
+  height: 100%;
+  margin: 15rpx 40rpx;
+  padding:35rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25rpx;
+  box-shadow: 0px 0px 15px #e6e6e6;
+  transition: All 1s ease;
+}
+
+.card-selected {
+  box-shadow: 8px 8px 10px #8a8a8a;
+}
+
+.card-left {
+  width: 90rpx;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-left-img {
+  width: 64rpx;
+  height: 64rpx;
+}
+
+.card-right {
+  margin-left: 25rpx;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-right-time {
+  color: rgb(130, 133, 139);
+  margin-top: 25rpx;
+}
+
+.card-right-time text {
+  background: #8a8a8a;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30rpx;
+  padding: 8rpx 25rpx;
+}
+
+.card-opr {
+  height: 100%;
+  padding: 15rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  right: -400rpx;
+  top: 0;
+  transition: All 1s ease;
+}
+
+.opr-item-check,
+.opr-item-modify,
+.opr-item-delete {
+  padding: 25rpx 25rpx 20rpx;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25rpx;
+  box-shadow: 0px 0px 15px #e6e6e6;
+  margin: 0 15rpx;
+}
+
+.opr-state {
+  transform: rotate(0deg) scale(1) translate(-400rpx, 0%);
+}
+
+.opr-img {
+  height: 48rpx;
+  width: 48rpx;
+}
+
+.addArea {
+  width: 120rpx;
+  height: 120rpx;
+  position: fixed;
+  bottom: 25rpx;
+  right: 25rpx;
+}
+
+.addBtn {
+  width: 120rpx;
+  height: 120rpx;
+  background-size: cover;
+}

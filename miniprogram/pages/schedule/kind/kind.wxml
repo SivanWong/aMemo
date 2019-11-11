@@ -1,0 +1,18 @@
+<!--pages/schedule/kind/kind.wxml-->
+<view class="container">
+
+  <view class="kind-options">
+    <view class="kind-wrap" wx:for="{{kindArr}}" wx:key="key">
+      <view 
+        class="kind-option {{item.name === currentkind ? ['kind-selected'] : ''}}"
+        data-kind="{{index}}"
+        data-currentkind="{{item.name}}"
+        bindtap="onChangeKind">
+        <image class="kind-img" src='{{item.img}}'></image>
+        <text class="kind-name">{{item.name}}</text>
+      </view>
+    </view>
+      <button class="kindBtn" bindtap="confirmKind">确定</button>
+  </view>
+
+</view>

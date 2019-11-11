@@ -1,0 +1,27 @@
+/* pages/me/help/question/quesetion.wxss */
+
+.question {
+  width: 100%;
+  border-bottom: 1px solid rgb(211, 225, 253);
+  height: auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.question-text {
+  font-weight: bold;
+  width: 80%;
+}
+
+.answer {
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.answer-text {
+  width: 80%;
+}

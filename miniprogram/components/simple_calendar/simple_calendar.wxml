@@ -1,0 +1,20 @@
+<!--components/simple_calendar/simple_calendar.wxml-->
+<view class="simple_calendar">
+  <text class="simple_calendar-title">{{yearmonth}}</text>
+  <view class="simple_calendar-content">
+    <view 
+      class="simple_calendar-date {{item.monthdate === selected ? ['simple_calendar-selected'] : ''}}"
+      wx:for="{{arr}}" 
+      wx:key=""
+      data-id = "{{item.id}}"
+      data-yearmonth="{{item.yearmonth}}
+      data-monthdate="{{item.monthdate}}
+      data-day="{{item.day}}"
+      bindtap="onChangeDate">
+      <text 
+        style="color: {{item.monthdate === selected ? '#fff' : 'gray'}}"
+        class="simple_calendar-week">{{item.week}}</text>
+      <text class="simple_calendar-day">{{item.day}}</text>
+    </view>
+  </view>
+</view>

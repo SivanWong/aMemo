@@ -1,0 +1,63 @@
+<!--pages/schedule/calendar/calendar.wxml-->
+<view class="container">
+
+  <view class="header">
+    <image src="./images/calendar.jpg"></image>
+  </view>
+
+  <view class="multi-calendar">
+    <view class="multi_calendar-content">
+      <view class="multi_calendar-calendar">
+        <view class="calendar-header">
+          <image 
+            style="opacity: {{currentMonth !== 0 ? 1 : 0}}"
+            class="header-left" 
+            src="./images/last.png"
+            bindtap="lastMonth"></image>
+          <text class="header-date">{{monthArr[currentMonth]}}</text>
+          <image 
+            style="opacity: {{currentMonth !== monthArr.length-1 ? 1 : 0}}"
+            class="header-right" 
+            src="./images/next.png"
+            bindtap="nextMonth"></image>
+        </view>
+        <view class="calendar-week">
+          <text 
+            class="week-text" 
+            wx:for="{{week}}"
+            wx:key=''>{{item}}</text>
+        </view>
+        <view class="calendar-date">
+          <text 
+            style="opacity: {{item.show ? 1 : 0}};{{item.disable ? 'color: gray' : ''}}"
+            class="date-text {{item.monthdate === selectDate ? ['date-selected'] : ''}}"
+            wx:for="{{dateArr}}"
+            wx:key=''
+            bindtap="selectDate"
+            data-disable="{{item.disable}}"
+            data-date="{{item.date}}"
+            data-monthdate="{{item.monthdate}}">{{item.date}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="multi_calendar-time">
+      <view class="calendar-time">
+        <image src="./images/time.png"></image>
+        <picker 
+          class="time-picker"
+          mode="time" 
+          value="{{time}}" 
+          start="{{timeStart}}" 
+          end="23:59" 
+          bindchange="bindTimeChange">
+          <text>时间</text>
+          <text class="picker-value">{{time}}</text>
+        </picker>
+        <image src="./images/right.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <button class="confitmBtn" bindtap="confirm">确定</button>
+
+</view> 

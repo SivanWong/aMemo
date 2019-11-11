@@ -1,0 +1,77 @@
+<!--pages/memo/memo.wxml-->
+<view class="container">
+
+  <view class="header">
+    <image class="header-img" src="./images/memo.jpg"></image>
+  </view>
+
+  <view class="calendar">
+    <view class="simple-calendar">
+      <simple-calendar 
+        bind:changeDate="handleChangeDate"
+        selectableDate="{{selectableDate}}"/>
+    </view>
+  </view>
+
+  <!-- 暂无数据 -->
+  <view class="null" wx:if = "{{noData}}">
+    <image 
+    class="null-img"
+    src="./images/null.png"></image>
+    <text class="null-text">暂无数据</text>
+  </view>
+
+  <view class="schedule" wx:else>
+    <view 
+      class="card"
+      wx:for="{{list}}" 
+      wx:key="">
+      <view 
+        class="card-content {{currentId === item._id ? ['card-selected'] : ''}} {{selected && currentId === item._id ? ['opr-state'] : ''}}"
+        bindtap="cardClick"
+        data-id="{{item._id}}">
+        <view class="card-left">
+          <image class="card-left-img" src="../../images/date.png"></image>
+        </view>
+        <view class="card-right">
+          <view class="card-right-title">
+            <text>{{item.title}}</text>
+          </view>
+          <view class="card-right-time">
+            <text>{{item.time}}</text>
+          </view>
+        </view>
+      </view>
+      <view 
+        class="card-opr {{selected && currentId === item._id ? ['opr-state'] : ''}}">
+        <view class="opr-item-check">
+          <image 
+              class="opr-img" 
+              src="./images/check.png" 
+              bindtap="check"></image>
+        </view>
+        <view class="opr-item-modify">
+          <image 
+            class="opr-img" 
+            src="./images/modify.png"
+            bindtap="modify"
+            data-sign="{{item.sign}}"></image>
+        </view>
+        <view class="opr-item-delete">
+          <image 
+            class="opr-img" 
+            src="./images/delete.png"
+            bindtap="delete"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="addArea">
+    <image
+      bindtap="add"
+      class="addBtn"
+      src="./images/add.png"></image>
+  </view>
+
+</view>

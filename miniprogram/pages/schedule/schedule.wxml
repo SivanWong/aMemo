@@ -1,0 +1,59 @@
+<!--pages/event/event.wxml-->
+<view class="container">
+  <form 
+    class="events" 
+    report-submit bindsubmit="{{options.opr}}">
+
+    <!-- 标题 -->
+    <view class="title">
+      <input 
+        class="title-input"
+        placeholder="标题 事件" 
+        bindinput="bindTitleInput"
+        value="{{title}}"></input>
+    </view>
+
+    <!-- 详细描述 -->
+    <view class="details">
+      <textarea 
+        class="details-textarea"
+        placeholder="详细描述 可不填" 
+        bindinput="bindDetailsInput"
+        value="{{details}}"></textarea>
+    </view> 
+
+    <!-- 各种选项 -->
+    <view class="options">
+      <view class="option" bindtap="onSelectDate">
+        <image class="option-img" src="./images/date.png"></image>
+        <text class="option-label">完成时间</text>
+        <text class="option-value">{{date}} {{time}}</text>
+      </view>
+       <view class="option" bindtap="onSelectRemind">
+        <image class="option-img" src="./images/remind.png"></image>
+        <text class="option-label">提醒时间</text>
+        <picker 
+          class="option-value"
+          mode="time" 
+          value="{{remind}}" 
+          start="00:00" 
+          end="{{remindEnd}}" 
+          bindchange="onSelectRemind">
+          <text class="picker-value">{{remind}}</text>
+        </picker>
+      </view>
+      <view class="option" bindtap="onSelectKind">
+        <image class="option-img" src="./images/kind.png"></image>
+        <text class="option-label">分类</text>
+        <text class="option-value">{{currentkind}}</text>
+      </view>
+    </view>
+
+    <!-- 操作按钮 -->
+    <button 
+      form-type="submit"
+      class="oprBtn">
+      {{options.opr === 'add' ? '添加' : '修改'}}
+    </button>
+  </form>
+</view>
